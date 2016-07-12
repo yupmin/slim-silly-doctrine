@@ -28,11 +28,8 @@ Run this command from the directory for Doctrine console After creating config.y
 ```
 cp .config.yml config.yml
 ```
+
 Add Entity, Repository files
-
-```
-
-```
 
 ```
 php vendor/bin/doctrine orm:schema-tool:update
