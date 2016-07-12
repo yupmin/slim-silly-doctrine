@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+$settings = require __DIR__ . '/../src/settings.php';
+$app = new Silly\Application();
+$app->useContainer(new \Slim\Container($settings));
+
+// Set up dependencies
+require __DIR__ . '/../src/dependencies.php';
+
+// Register commands
+require __DIR__ . '/../src/commands.php';
+
+$app->run();
+

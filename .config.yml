@@ -1,0 +1,6 @@
+database:
+  driver: pdo_mysql
+  host: localhost
+  dbname: silm-silly-doctrine
+  user: silm-silly-doctrine
+  password: silm-silly-doctrine
