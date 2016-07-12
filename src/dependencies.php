@@ -31,4 +31,3 @@ $container['entityManager'] = function ($c) {
 
     return \Doctrine\ORM\EntityManager::create($settings['connection'], $config);
 };
-
